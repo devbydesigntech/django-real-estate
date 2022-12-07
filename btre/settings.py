@@ -151,3 +151,8 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'c95c8775443d10'
 EMAIL_HOST_PASSWORD = 'e89642211ed842'
 EMAIL_PORT = '2525'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
